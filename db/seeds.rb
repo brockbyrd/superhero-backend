@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+resp = HTTParty.get('https://akabab.github.io/superhero-api/api/all.json')
+data = JSON.parse(resp.body)
